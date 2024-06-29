@@ -56,6 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const backgroundMusic = document.getElementById('backgroundMusic');
     const welcomeCard = document.getElementById('welcomeCard');
     const enterButton = document.getElementById('enterButton');
+    const content = document.getElementById('content');
+
+    const audio = new Audio('assets/sounds/ding.mp3');
+    document.body.addEventListener('touchstart', () => {
+    audio.play();
+    audio.pause();
+    }, false);
 
     // Función para reproducir música
     const playMusic = () => {
@@ -69,8 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Al hacer clic en el botón "Ingresar", reproducir la música y ocultar la tarjeta de bienvenida
     enterButton.addEventListener('click', function() {
+        audio.currentTime = 0;
         playMusic();
         welcomeCard.style.display = 'none';
+        content.classList.remove('blurred');
+        document.body.classList.remove('no-scroll');
     });
 
     // Escucha el cambio de estado del checkbox para pausar o reproducir la música
@@ -81,4 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
             backgroundMusic.pause();
         }
     });
+
+    // Aplicar desenfoque al contenido cuando la tarjeta de bienvenida está visible
+    content.classList.add('blurred');
+    document.body.classList.add('no-scroll');
 });
