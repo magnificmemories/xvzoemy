@@ -58,10 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const enterButton = document.getElementById('enterButton');
     const content = document.getElementById('content');
 
-    const audio = new Audio('assets/sounds/ding.mp3');
     document.body.addEventListener('touchstart', () => {
-    audio.play();
-    audio.pause();
+    backgroundMusic.play();
+    backgroundMusic.pause();
     }, false);
 
     // Función para reproducir música
@@ -76,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Al hacer clic en el botón "Ingresar", reproducir la música y ocultar la tarjeta de bienvenida
     enterButton.addEventListener('click', function() {
-        audio.currentTime = 0;
+        backgroundMusic.currentTime = 0;
         playMusic();
         welcomeCard.style.display = 'none';
         content.classList.remove('blurred');
