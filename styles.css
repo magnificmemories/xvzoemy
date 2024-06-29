@@ -1,0 +1,477 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+ body {
+  background-image: url("./assets/mas\ grande.gif");
+  background-repeat: repeat-y;
+  background-size: 100%;
+} 
+}
+
+img {
+  pointer-events: none;
+}
+
+.div-main-bienvenida {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+.video-bienvenida {
+  width: 360px;
+}
+
+/* .main-background {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  opacity: 0.5;
+} */
+
+/* SEGUNDO DIV */
+.nd-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -18px;
+  margin-bottom: 70px;
+}
+.nd-div-title{
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #443028;
+  z-index: 1;
+}
+.nd-div-ndtitle {
+  margin-top: 75px;
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #443028;
+}
+.img-temp {
+  width: 360px;
+  margin-bottom: 35px;
+  margin-top: -20px;
+  z-index: -1;
+}
+
+.p-days {
+  color: #443028;
+  margin-top: -314px;
+  margin-right: 135px;
+  font-size: 31px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.p-hours {
+  color: #443028;
+  margin-left: 140px;
+  margin-top: -67px;
+  font-size: 31px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.p-minutes {
+  color: #443028;
+  margin-top: 40px;
+  margin-right: 135px;
+  font-size: 31px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.p-seconds {
+  color: #443028;
+  margin-left: 140px;
+  margin-top: -72px;
+  font-size: 31px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+
+
+.p-days-title {
+  color: #443028;
+  margin-top: 0px;
+  margin-right: 133px;
+  font-size: 29px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.p-hours-title{
+  color: #443028;
+  margin-top: -4px;
+  margin-left: 140px;
+  font-size: 29px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p-minutes-title{
+  color: #443028;
+  margin-top: 0px;
+  margin-right: 133px;
+  font-size: 29px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p-seconds-title{
+  color: #443028;
+  margin-top: -4px;
+  margin-left: 140px;
+  font-size: 29px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* TERCER DIV */
+.rd-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -15px;
+}
+.gallery {
+
+}
+.gallery-img {
+  width: 360px;
+}
+
+
+
+/* DATE HOUR SECTION  */
+.div-date-hour {
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.img-date-hour {
+  width: 360px;
+  margin-bottom: 6px;
+}
+.img-back-date-hour {
+  margin-top: -136px;
+  width: 360px;
+}
+.p-date-hour {
+  color: #443028;
+  margin-top: -238px;
+  margin-right: -125px;
+  font-size: 29px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.p-date-hour-nd {
+  color: #443028;
+  margin-top: 2px;
+  margin-right: -125px;
+  font-size: 29px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.linea1 {
+  width: 100px;
+  margin-left: 135px;
+  margin-top: 3px;
+}
+
+
+/* LOCATION */
+.div-location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.title-location {
+  width: 360px;
+}
+.background-location {
+  margin-top: -128px;
+  width: 360px;
+}
+.p-location {
+  color: #443028;
+    margin-top: -231px;
+    margin-right: -95px;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 6px;
+}
+.p-location-nd {
+  color: #443028;
+    margin-top: 10px;
+    margin-right: -100px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.linea-nd-1 {
+  width: 120px;
+  height: 2px;
+  margin-left: 95px;
+}
+
+/* PARENTS */
+.div-parents {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.title-parents {
+  width: 360px;
+}
+.background-parents {
+  width: 360px;
+  margin-top: -55px;
+}
+.p-parents {
+  color: #443028;
+  margin-top: -167px;
+  margin-right: -105px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* DRESSCODE */
+.div-dresscode {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.title-dresscode {
+  width: 360px;
+  margin-bottom: 10px;
+}
+.background-dresscode {
+  width: 360px;
+  margin-top: -60px;
+}
+.p-dresscode {
+  color: #443028;
+  margin-top: -150px;
+  margin-bottom: 5px;
+  margin-right: -105px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.p-dresscode-nd {
+  color: #443028;
+  margin-top: 10px;
+  margin-right: -105px;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.linea-nd-2 {
+  width: 120px;
+  height: 2px;
+  margin-top: 4px;
+  margin-left: 105px;
+}
+/* MESA DE REGALOS */
+.div-mesa-de-regalos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.title-mesa-de-regalos {
+  width: 360px;
+  margin-bottom: 0px;
+}
+.background-mesa-de-regalos {
+  width: 360px;
+  margin-top: -45px;
+}
+.p-mesa-de-regalos {
+  color: #443028;
+  margin-top: -360px;
+  font-size: 22px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.p-mesa-de-regalos-nd {
+  color: #443028;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.linea-nd-3 {
+  width: 220px;
+  height: 2px;
+  margin-top: 4px;
+}
+/* CONFIRMACION */
+.div-confirmacion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.title-confirmacion {
+  width: 360px;
+  margin-bottom: 3px;
+}
+.background-confirmacion {
+  width: 360px;
+  margin-top: -38px;
+}
+.p-confirmacion {
+  color: #443028;
+  margin-top: -140px;
+  font-size: 26px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  margin-left: 97px;
+}
+.p-confirmacion-nd {
+  color: #443028;
+  margin-top: 0px;
+  font-size: 22px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  margin-top: 7px;
+  margin-left: 97px;
+}
+.linea-nd-4 {
+  width: 120px;
+  margin-left: 100px;
+}
+a {
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+/* MUSICA */
+.div-music {
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  right: -1;
+}
+.welcome-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1001;
+}
+
+.img-button {
+  width: 300px;
+}
+
+.welcome-card button {
+
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+}
+
+.music-button-checkbox {
+  display: none;
+  
+}
+
+.music-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url("./assets/play.gif"); /* GIF para el estado de reproducción */
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  border-radius: 10px;
+
+}
+
+.music-button-checkbox:checked + .music-button {
+  background-image: url("./assets/playing.gif"); /* GIF para el estado de pausa */
+}
