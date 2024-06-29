@@ -50,7 +50,6 @@ const countdown = setInterval(function() {
   }
 }, 1000);
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const musicButton = document.getElementById('musicButton');
     const backgroundMusic = document.getElementById('backgroundMusic');
@@ -58,32 +57,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const enterButton = document.getElementById('enterButton');
     const content = document.getElementById('content');
 
-    const audio = new Audio('assets/sounds/ding.mp3');
-    document.body.addEventListener('touchstart', () => {
-    audio.play();
-    audio.pause();
-    }, false);
-
     // Función para reproducir música
     const playMusic = () => {
-        backgroundMusic.play().then(() => {
-            console.log("Music playing.");
-        }).catch(error => {
-            console.error("Error playing the music:", error);
-            alert("La música no se puede reproducir automáticamente en Safari. Haga clic en el botón de música para iniciar la reproducción.");
-        });
+        if (backgroundMusic.paused) {
+            const playPromise = backgroundMusic.play();
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    console.log('Playback started.');
+                }).catch(error => {
+                    console.error('Playback error:', error);
+                });
+            }
+        }
     };
 
     // Al hacer clic en el botón "Ingresar", reproducir la música y ocultar la tarjeta de bienvenida
     enterButton.addEventListener('click', function() {
-        audio.currentTime = 0;
-        playMusic();
+        // Reproducir música solo si está marcado el checkbox o si es Safari (donde la reproducción automática puede ser bloqueada)
+        if (musicButton.checked || navigator.userAgent.indexOf('Safari') != -1) {
+            playMusic();
+        }
         welcomeCard.style.display = 'none';
         content.classList.remove('blurred');
         document.body.classList.remove('no-scroll');
     });
 
-    // Escucha el cambio de estado del checkbox para pausar o reproducir la música
+    // Escuchar el cambio de estado del checkbox para pausar o reproducir la música
     musicButton.addEventListener('change', function() {
         if (musicButton.checked) {
             playMusic();
