@@ -57,6 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const enterButton = document.getElementById('enterButton');
     const content = document.getElementById('content');
 
+    document.body.addEventListener('touchstart', () => {
+    backgroundMusic.play();
+    backgroundMusic.pause();
+    }, false);
+
     // Función para reproducir música
     const playMusic = () => {
         if (backgroundMusic.paused) {
@@ -77,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (musicButton.checked || navigator.userAgent.indexOf('Safari') != -1) {
             playMusic();
         }
+        backgroundMusic.currentTime = 0;
+        playMusic();
         welcomeCard.style.display = 'none';
         content.classList.remove('blurred');
         document.body.classList.remove('no-scroll');
